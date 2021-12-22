@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <form class="sub">
+            <h2>Đặt hàng mua xe</h2>
+            <p id="error"></p>
+            <div class="carName">
+                <input type="text" id="carName" placeholder="Tên xe">
+            </div>
+            <div class="carCode">
+                <input type="text" id="carCode" placeholder="Mã số xe">
+            </div>
+            <div class="carcolor">
+                <label for="">Màu xe</label>
+                <select id="carColor">
+                    <option value="" hidden></option>
+                    <option value="xanh">Xanh</option>
+                    <option value="đỏ">Đỏ</option>
+                    <option value="tím">Tím</option>
+                    <option value="vàng">Vàng</option>
+                </select>
+            </div>
+            <div class="quantity">
+                <input type="text" id="quantity" placeholder="Số lượng">
+            </div>
+            <div class="price">
+                <input type="text" id="price" placeholder="Giá tiền">
+            </div>
+            <div>
+                <button class="submit" id="submit">Đặt hàng</button>
+            </div>
+        </form>
+        <div class="show">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tên xe</th>
+                        <th>Mã số xe</th>
+                        <th>Màu xe</th>
+                        <th>Số lượng</th>
+                        <th>Giá tiền</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="showCar">
+                    
+                </tbody>
+            </table>
+        </div>
+        <div class="sumMoney">
+            <label for="">Tổng tiền: </label>
+            <label id="sumMoney"></label>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
